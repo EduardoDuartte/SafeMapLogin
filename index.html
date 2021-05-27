@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <title>SafeMap</title>
+    <link rel="shortcut icon" href="./images/favicon (1).ico" />
+</head>
+
+<body class="bodyPrincipal">
+
+    <div>
+        <img class="frente" src="./images/Vector 1.png" alt="">
+        <img class="fundo" src="./images/Vector 2.png" alt="">
+        <img class="map" src="./images/Map.png" alt="">
+        <div class="evite">
+            <span class="aglo">Evite aglomerações</span>
+            <span class="use">Use <span class="safe" >Safe</span><b class="mapTitle">Map </b><img  class="logo" src="./images/Group 2.png" alt=""></span> 
+        </div>
+
+    <div class="principal">
+        <div class="dentroPrincipal">
+        <form action="" class="formLogin">
+            <span class="loginSpan">log<b>in</b></span>
+            <input class="inputForm" type="text" placeholder="Usuário" required>
+            <input class="inputForm" type="password" placeholder="Senha" required>
+            <button class="buttonLogin">Entrar</button>
+            <a href="esqueceuSenha.html" class="esqueciSenha">Esqueci minha senha</a>
+        </form>
+            <span class="OU">— ou —</span>
+            <button onclick="window.location.href = '' " class="entrarGoogle">
+                <img src="/images/icons8-google-48.png" alt="logo Google" class="logoGoogle"><p class="entCoGo">
+                    Entrar com <b>Google</b></p></button>
+                    <div class="BrunoVaiTomaNoCu"></div>
+<!-- <a href="#openModal" class="Acadastrar"> --> <button class="cadastrar" onclick="openModal();">Cadastrar </button>
+                  
+        </div>
+    
+
+    
+            <div id="openModal" class="divCadastrar modalDialog">
+                <a href="#close" class="close">X</a>
+                <form action="" class="formCadastrar">
+                    <span class="sign">sign<b>up</b></span>
+                    <input type="text" placeholder="nome" required>
+                    <input type="text" placeholder="sobrenome" required>
+                    <input type="email" placeholder="e-mail" required>
+                    <input type="number" placeholder="telefone" required>
+                    <input type="password" placeholder="senha" required>
+                    <input type="password" placeholder="confirmar senha" required>
+                    <button class="buttonCadastrar">Cadastrar</button>
+                </form>
+            </div>
+    
+</div>
+
+</body>
+<script>
+    const onModal = document.getElementById("openModal");
+
+    function openModal(){
+        onModal.style.display="flex";
+    }
+</script>
+</html>
